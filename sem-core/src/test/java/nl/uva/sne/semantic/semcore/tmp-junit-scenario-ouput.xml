@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+<rdf:Description rdf:about="http://testconcept.sne.uva.nl#MyBookCase">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Individual"/>
+	<rdf:type rdf:resource="http://sne.uva.nl/minibookontology.owl#BookCase"/>
+	<hasSize xmlns="http://sne.uva.nl/minibookontology.owl#">5</hasSize>
+	<hasBook xmlns="http://sne.uva.nl/minibookontology.owl#" rdf:resource="http://testconcept.sne.uva.nl#TheShining"/>
+	<hasBook xmlns="http://sne.uva.nl/minibookontology.owl#" rdf:resource="http://testconcept.sne.uva.nl#DumaKey"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://testconcept.sne.uva.nl#TheShining">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Individual"/>
+	<rdf:type rdf:resource="http://sne.uva.nl/minibookontology.owl#Book"/>
+	<hasAuthor xmlns="http://sne.uva.nl/anotherminibookontology.owl#" rdf:resource="http://sne.uva.nl/minibookontology.owl#STEPHEN_KING"/>
+	<hasBookCase xmlns="http://sne.uva.nl/minibookontology.owl#" rdf:resource="http://testconcept.sne.uva.nl#MyBookCase"/>
+	<hasBookCover xmlns="http://sne.uva.nl/minibookontology.owl#" rdf:resource="http://testconcept.sne.uva.nl#StephenKing"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://testconcept.sne.uva.nl#DumaKey">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Individual"/>
+	<rdf:type rdf:resource="http://sne.uva.nl/minibookontology.owl#Book"/>
+	<hasAuthor xmlns="http://sne.uva.nl/anotherminibookontology.owl#" rdf:resource="http://sne.uva.nl/minibookontology.owl#STEPHEN_KING"/>
+	<hasBookCase xmlns="http://sne.uva.nl/minibookontology.owl#" rdf:resource="http://testconcept.sne.uva.nl#MyBookCase"/>
+	<hasBookCover xmlns="http://sne.uva.nl/minibookontology.owl#" rdf:resource="http://testconcept.sne.uva.nl#StephenKing"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://testconcept.sne.uva.nl#StephenKing">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Individual"/>
+	<rdf:type rdf:resource="http://sne.uva.nl/minibookontology.owl#BookAuthor"/>
+</rdf:Description>
+
+</rdf:RDF>
